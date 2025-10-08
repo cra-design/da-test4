@@ -1,0 +1,82 @@
+[
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-before-you-apply.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-before-you-apply.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-disability-benefit.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits/child-disability-benefit.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits/dental-benefit.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/dental-benefit/who-apply.html",
+    "destination": "/da-test4/revenue-agency/services/child-family-benefits/dental-benefit/who-apply.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/services/taxes/income-tax.html",
+    "destination": "/da-test4/services/taxes/income-tax.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/purpose-taxes.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/purpose-taxes.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/starting-work.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/starting-work.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return/exercise-completing-basic-return.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return/exercise-completing-basic-return.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/videos.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/videos.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/videos/one-about-td1-form-part-1.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/videos/one-about-td1-form-part-1.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/videos/one-about-td1-form-part-2.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/educational-programs/videos/one-about-td1-form-part-2.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/who-should-file-tax.html",
+    "destination": "/da-test4/services/taxes/income-tax/personal-income-tax/who-should-file-tax.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file.html",
+    "destination": "/da-test4/services/taxes/income-tax/personal-income-tax/after-you-file.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties/late-filing-penalty.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties/late-filing-penalty.html"
+  },
+  {
+    "origin": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties/false-reporting.html",
+    "destination": "/da-test4/revenue-agency/services/tax/individuals/topics/about-your-tax-return/interest-penalties/false-reporting.html"
+  }
+]
