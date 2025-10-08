@@ -1,0 +1,1501 @@
+---
+layout: without-h1
+title: "Exercise: Calculate a refund or a balance owing - Learn about your taxes"
+description: "Learn basic tax calculations with this simplified exercise. Follow step-by-step instructions to calculate a refund or balance owing. For educational purposes only."
+subject: "Economics and Industry;Taxes"
+keywords: "tax calculation, refund, balance owing, simplified tax return, income tax, tax exercise, tax tutorial, federal tax, provincial tax, tax education,"
+auth:
+  type: "contextual"
+  label: "Sign in"
+  labelExtended: "CRA sign in"
+  link: "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html"
+altLangPage: "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/programmes-educatifs/remplir-declaration-revenu-base/exercice-remplir-declaration-revenue-base.html"
+dateModified: 2022-05-16
+dateIssued: 2021-11-25
+breadcrumbs: # By default the Canada.ca crumbs is already set
+  - title: "Taxes"
+    link: "https://www.canada.ca/en/services/taxes.html"
+  - title: "Income tax"
+    link: "https://www.canada.ca/en/services/taxes/income-tax.html"
+  - title: "Personal income tax"
+    link: "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax.html"
+  - title: "Learn about your taxes"
+    link: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs.html"
+  - title: "Completing a basic tax return – Learn about your taxes"
+    link: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return.html"
+feedbackData:
+  section: "Exercise: Calculate a refund or a balance owing - Learn about your taxes"
+notedlinks:
+  - title: "Exercise: Calculate a refund or a balance owing - Learn about your taxes"
+    link: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/completing-basic-return/exercise-completing-basic-return.html"
+  - title: "Repository sitemap"
+    link: "https://cra-design.github.io/da-test4/index.html"
+---
+
+<p class="lead mrgn-tp-md mrgn-bttm-0 text-muted">Learn about your taxes</p>
+<h1 class="gc-thickline mrgn-tp-0" id="wb-cont">Exercise – Calculate a refund or a balance owing</h1>
+<div class="hidden-print">
+    <div class="alert alert-info hidden" id="intro">
+        <h2 class="h3 text-info">Answer key will follow</h2>
+        <p class="wb-inv">Alert: information</p>
+        <p>You will be able to see the answers by selecting the "Show answers" button after the scenario and information.</p>
+    </div>
+    <p>This exercise uses a simplified version of the income tax and benefit return to show you the basic calculations for each step.</p>
+    <p>The amounts shown <strong>are not</strong> actual tax brackets, tax rates or credit values. <strong>Do not</strong> use them to do your taxes or to check calculations done by certified tax software or on official paper tax forms.</p>
+    <p>Certified tax software will calculate most amounts based on the information you input. These amounts are provided to you for you to complete this exercise manually.</p>
+    <p>If you are a resident of Quebec, you will complete a separate provincial tax return with <span lang="fr">Revenu Québec</span>.</p>
+</div>
+<h2 id="examples">Select a scenario to get started</h2>
+<div id="example-btns">
+    <ul
+        class="list-inline hidden-print"
+        data-wb-actionmng='[
+		{ "trggroup":"clearFilter", "action": "removeClass", "source": ".fltopts", "class": "btn-primary" }, { "trggroup":"clearFilter", "action": "addClass", "source": ".fltopts", "class": "btn-link" }]'
+    >
+        <li>
+            <button
+                type="button"
+                class="fltopts btn btn-link btn-lg mrgn-lft-md mrgn-rght-md"
+                data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "removeClass", "source": ".example-1:not(.correct-answer), .answers-1, .answers-show-1, #form-fill, #calculation-init", "class": "hidden"}, { "action": "addClass", "source": ".example-2, .answers-2, .answers-show-2, .example-3, .answers-3, .answers-show-3, .example-4, .answers-4, .answers-show-4, #calculation-alt", "class": "hidden"},
+			{ "action": "addClass", "class": "btn-primary" }, { "action": "removeClass", "class": "btn-link" }, {"action": "removeClass", "source": "#tax-bracket&gt;colgroup&gt;col", "class": "bg-info"}
+		]'
+                onclick="document.getElementById('tax-bracket-select').reset();"
+            >
+                Jonah quits the bakery<span class="wb-inv">: start exercise</span>
+            </button>
+        </li>
+        <li class="brdr-lft">
+            <button
+                class="fltopts btn btn-link btn-lg mrgn-lft-md mrgn-rght-md"
+                data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "removeClass", "source": ".example-2:not(.correct-answer), .answers-2, .answers-show-2, #form-fill, #calculation-init", "class": "hidden" }, { "action": "addClass", "source": ".example-1, .answers-1, .answers-show-1, .example-3, .answers-3, .answers-show-3, .example-4, .answers-4, .answers-show-4, #calculation-alt", "class": "hidden" },
+			{ "action": "addClass", "class": "btn-primary" }, { "action": "removeClass", "class": "btn-link" }, {"action": "removeClass", "source": "#tax-bracket&gt;colgroup&gt;col", "class": "bg-info"}
+		]'
+                onclick="document.getElementById('tax-bracket-select').reset();"
+            >
+                Terry keeps track of tips<span class="wb-inv">: start exercise</span>
+            </button>
+        </li>
+        <li class="brdr-lft">
+            <button
+                class="fltopts btn btn-link btn-lg mrgn-lft-md mrgn-rght-md"
+                data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "removeClass", "source": ".example-3:not(.correct-answer), .answers-3, .answers-show-3, #form-fill, #calculation-init", "class": "hidden" }, { "action": "addClass", "source": ".example-1, .answers-1, .answers-show-1, .example-2, .answers-2, .answers-show-2, .example-4, .answers-4, .answers-show-4, #calculation-alt", "class": "hidden" },
+			{ "action": "addClass", "class": "btn-primary" }, { "action": "removeClass", "class": "btn-link" }, {"action": "removeClass", "source": "#tax-bracket&gt;colgroup&gt;col", "class": "bg-info"}
+		]'
+                onclick="document.getElementById('tax-bracket-select').reset();"
+            >
+                Farah gets a degree<span class="wb-inv">: start exercise</span>
+            </button>
+        </li>
+        <li class="brdr-lft">
+            <button
+                type="button"
+                class="fltopts btn btn-link btn-lg mrgn-lft-md mrgn-rght-md"
+                data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "removeClass", "source": ".example-4:not(.correct-answer), .answers-4, .answers-show-4, #form-fill, #calculation-init", "class": "hidden"}, { "action": "addClass", "source": ".example-1, .answers-1, .answers-show-1, .example-2, .answers-2, .answers-show-2, .example-3, .answers-3, .answers-show-3, #calculation-alt", "class": "hidden"},
+			{ "action": "addClass", "class": "btn-primary" }, { "action": "removeClass", "class": "btn-link" }, {"action": "removeClass", "source": "#tax-bracket&gt;colgroup&gt;col", "class": "bg-info"}
+		]'
+                onclick="document.getElementById('tax-bracket-select').reset();"
+            >
+                Chayton lives on reserve<span class="wb-inv">: start exercise</span>
+            </button>
+        </li>
+    </ul>
+</div>
+<div aria-live="polite">
+    <div class="example-1 hidden">
+        <h3>Jonah quits the bakery</h3>
+        <p>Jonah worked full-time at a local bakery last year until July, when he quit his job to travel for a month before going back to school.</p>
+        <p>He did not have any additional income for the year.</p>
+    </div>
+</div>
+<div class="example-1 hidden">
+    <p>Jonah received a T4 slip, Statement of Remuneration Paid, from the bakery.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/jonah-t4-en.png" alt="Text of Jonah's T4 slip below" class="img-responsive" />
+    <details>
+        <summary>Details of Jonah's T4 slip</summary>
+        <p>Employer's name: Casey's Bakery</p>
+        <p>Employee's name and address:</p>
+        <ul>
+            <li>Last name: Smith</li>
+            <li>First name: Jonah</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        1 Home Avenue<br />
+                        City, Newfoundland and Labrador, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 10: Province of employment – NL</li>
+            <li>Box 12: Social Insurance Number – <a class="nowrap">123 456 789</a></li>
+            <li>Box 14: Employment income – $18,000.00</li>
+            <li>Box 16: Employee's CPP contributions – $870.90</li>
+            <li>Box 18: Employee's EI premiums – $284.40</li>
+            <li>Box 20: RPP contributions – $675.00</li>
+            <li>Box 22: Income tax deducted – $2,209.80</li>
+            <li>Box 24: EI Insurable earnings – $18,000.00</li>
+            <li>Box 26: CPP/QPP pensionable earnings – $18,000.00</li>
+            <li>
+                Box 85: Other information (explained on reverse side of slip) – $76.50
+                <ul>
+                    <li>This box represents employee-paid premiums for a private health services plan.</li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+    <hr class="brdr-bttm" />
+    <h2 id="calculation1" class="mrgn-tp-sm"><span id="calculation-init">Complete Jonah’s calculations</span><span id="calculation-alt" class="hidden">Complete Jonah’s calculations (with answers)</span></h2>
+    <p>Use the information to fill out the simplified tax return to find out if Jonah will get a refund or have a balance owing.</p>
+    <p>For this example, you will be able to validate your amounts, calculations and final answer at the end of the exercise.</p>
+    <hr class="brdr-bttm" />
+</div>
+<section aria-live="polite">
+    <div class="example-2 hidden">
+        <h3>Terry keeps track of tips</h3>
+        <p>Terry is 18 and works at a pizza restaurant, where she earns hourly wages and tips.</p>
+        <p>Last year Terry received $997.60 in cash tips, in addition to her salary. Terry kept track of her cash tips because her employer does not record this information.</p>
+    </div>
+</section>
+<div class="example-2 hidden">
+    <p>Terry received a T4 slip, Statement of Remuneration Paid, from her employer.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/terry-t4-en.png" alt="Text of Terry's T4 slip below" class="img-responsive" />
+    <details>
+        <summary>Details of Terry's T4 slip</summary>
+        <p>Employer's name: Plaza di pizza</p>
+        <p>Employee's name and address:</p>
+        <ul>
+            <li>Last name: Lee</li>
+            <li>First name: Terry</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        City, British Columbia, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 10: Province of employment – BC</li>
+            <li>Box 12: Social Insurance Number –<a class="nowrap">777 777 777</a></li>
+            <li>Box 14: Employment income – $12,000.00</li>
+            <li>Box 16: Employee's CPP contributions – $480.00</li>
+            <li>Box 18: Employee's EI premiums – $200.00</li>
+            <li>Box 22: Income tax deducted – $200.00</li>
+            <li>Box 24: EI Insurable earnings – $12,000.00</li>
+            <li>Box 26: CPP/QPP pensionable earnings – $12,000.00</li>
+        </ul>
+    </details>
+    <hr class="brdr-bttm" />
+    <h2 id="calculation2" class="mrgn-tp-sm"><span id="calculation-init2">Complete Terry's calculations</span><span id="calculation-alt2" class="hidden">Complete Terry's calculations (with answers)</span></h2>
+    <p>Use the information to fill out the simplified tax return and determine if Terry is getting a refund or has a balance owing.</p>
+    <p>For this example, you will be able to validate your amounts, calculations and final answer at the end of the exercise.</p>
+    <hr class="brdr-bttm" />
+</div>
+<section aria-live="polite">
+    <div class="example-3 hidden">
+        <h3>Farah gets a degree</h3>
+        <p>Farah is working part-time at a local bookstore and is pursuing her degree on a part-time basis at the City College which granted her a scholarship. She also receives income support from the Ontario Disability Support Program. To help Farah with her tuition fees, she received payments from her registered education savings plan (RESP).</p>
+        <p>Farah has a physical impairment and has been deemed eligible to claim the disability tax credit (DTC). Although Farah is attending school part-time, she is considered a full-time student for scholarship exemption purposes because she is eligible for the DTC.</p>
+    </div>
+</section>
+<div class="example-3 hidden">
+    <p>Farah received a T5007, Statement of Benefits, from Income support from the Ontario Disability Support Program (ODSP).</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-t5007-en.png" alt="Text of Farah's T5007 Statement of Benefits below" class="img-responsive" />
+    <details>
+        <summary>Details of Farah’s T5007 slip</summary>
+        <p>Recipient’s name and address:</p>
+        <ul>
+            <li>Last name: Awan</li>
+            <li>First name: Farah</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        City, Ontario, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 11: Social assistance payments or provincial or territorial supplements – $14,000.00</li>
+            <li>Box 12: Social insurance number – 000&nbsp;000&nbsp;000</li>
+        </ul>
+    </details>
+    <p class="mrgn-tp-md">Farah received a T4 slip, Statement of Remuneration Paid, from her employer.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-t4-en.png" alt="Text of Farah's T4 Statement of Remuneration Paid is below" class="img-responsive" />
+    <details>
+        <summary>Details of Farah’s T4 slip</summary>
+        <p>Employer’s name: Local Bookstore</p>
+        <p>Employee’s name and address:</p>
+        <ul>
+            <li>Last name: Awan</li>
+            <li>First name: Farah</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        City, Ontario, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 10: Province of employment – ON</li>
+            <li>Box 12: Social insurance number – 000&nbsp;000&nbsp;000</li>
+            <li>Box 14: Employment income – $10,000.00</li>
+            <li>Box 16: Employee’s CPP contributions &nbsp;– $385.00</li>
+            <li>Box 18: Employee’s EI premiums &nbsp;– $150.00</li>
+            <li>Box 22: Income tax deducted – $0.00</li>
+            <li>Box 24: EI Insurable earnings – $10,000.00</li>
+            <li>Box 26: CPP/QPP pensionable earnings – $10,000.00</li>
+        </ul>
+    </details>
+    <p class="mrgn-tp-md">Farah received a T4A slip, Statement of Pension, Retirement, Annuity, and Other Income, from her school for her scholarship.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-t4a-en.png" alt="Text of Farah's T4A slip is below" class="img-responsive" />
+    <details>
+        <summary>Details of Farah’s T4A slip</summary>
+        <p>Payer’s name: City College</p>
+        <p>Recipient’s name and address:</p>
+        <ul>
+            <li>Last name: Awan</li>
+            <li>First name: Farah</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        City, Ontario, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Other information:</p>
+        <ul>
+            <li>Box 12: Social insurance number – 000&nbsp;000&nbsp;000</li>
+            <li>Box 105: Scholarships, fellowships, bursaries, and artists' project grants (explained on reverse side of slip) – $4,500.00</li>
+        </ul>
+    </details>
+    <p class="mrgn-tp-md">Farah received a T4A slip, Statement of Pension, Retirement, Annuity, and Other Income, from her financial institution for her RESP payments.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-t4a2-en.png" alt="Text of Farah's T4A (Statement of Pension, Retirement, Annuity, and Other Income) slip is below" class="img-responsive" />
+    <p class="mrgn-tp-md"><strong>Note:</strong> Your financial institution will only report the taxable portion of your RESP payments on your T4A slip.</p>
+    <details>
+        <summary>Details of Farah’s T4A slip</summary>
+        <p>Payer’s name: Financial Institution</p>
+        <p>Recipient’s name and address:</p>
+        <ul>
+            <li>Last name: Awan</li>
+            <li>First name: Farah</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        City, Ontario, X0X&nbsp;0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Other information:</p>
+        <ul>
+            <li>Box 012: Social insurance number – 000&nbsp;000&nbsp;000</li>
+            <li>Box 042: RESP educational assistance payments (explained on reverse side of slip) – $5,700.00</li>
+        </ul>
+    </details>
+    <p class="mrgn-tp-md">Farah received a Form T2202, Tuition and Enrolment Certificate, from her school for her tuition fees.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-t2202-en.png" alt="Text of Farah's T2202 slip is below" class="img-responsive" />
+    <details>
+        <summary>Details of Farah’s Form T2202</summary>
+        <p class="mrgn-bttm-0">Name and address of designated educational institution:</p>
+        <ul class="lst-none">
+            <li>
+                City College<br />
+                1 Study Road<br />
+                City, Ontario, X0X&nbsp;0X0
+            </li>
+        </ul>
+        <p>Additional information:</p>
+        <ul>
+            <li>Box 11: School type - 2 (College)</li>
+            <li>Box 13: Name of program or course - Degree</li>
+            <li>Box 14: Student number - 123456789</li>
+            <li>Box 17: Social insurance number (SIN) - 000&nbsp;000&nbsp;000</li>
+        </ul>
+        <p>Student’s name: Farah Awan<br />Student address:</p>
+        <ul class="lst-none">
+            <li>123 Main Street<br />City, Ontario, X0X&nbsp;0X0</li>
+        </ul>
+        <p>Session periods 1:</p>
+        <ul>
+            <li>Box 19: From YY/MM - XX/01</li>
+            <li>Box 20: To YY/MM - XX/04</li>
+            <li>Box 21: Number of months part-time - 4</li>
+            <li>Box 23: Eligible tuition fees, part-time and full-time - $3,000.00</li>
+        </ul>
+        <p>Session periods 2:</p>
+        <ul>
+            <li>Box 19: From YY/MM - XX/09</li>
+            <li>Box 20: To YY/MM - XX/12</li>
+            <li>Box 21: Number of months part-time - 4</li>
+            <li>Box 23: Eligible tuition fees, part-time and full-time - $3,000.00</li>
+        </ul>
+        <p>Totals:</p>
+        <ul>
+            <li>Box 25: Total number of months part-time - 8</li>
+            <li>Box 26: Total eligible tuition fees, part-time and full-time - $6,000.00</li>
+        </ul>
+    </details>
+    <!--Farah’s calculations bttn-->
+    <hr class="brdr-bttm" />
+    <h2 id="calculation3" class="mrgn-tp-sm"><span id="calculation-init3">Complete Farah’s calculations</span><span id="calculation-alt3" class="hidden">Complete Farah’s calculations (with answers)</span></h2>
+    <p>Use the information to fill out the simplified tax return to find out if Farah will get a refund or have a balance owing.</p>
+    <p>For this example, you will be able to validate your amounts, calculations and final answer at the end of the exercise.</p>
+    <hr class="brdr-bttm" />
+</div>
+<!---->
+<div aria-live="polite">
+    <div class="example-4 hidden">
+        <h3>Chayton lives on reserve</h3>
+        <p>Chayton lives on reserve and worked part-time at The Gas Station located off reserve last year. After he received his electrician’s professional certificate, he started working on reserve at the Local Electricians.</p>
+        <p><strong>Note:</strong> The Canada Revenue Agency uses the term “Indian“ because it has a legal meaning in the <em>Indian Act</em>.</p>
+        <p>Chayton’s employment income from The Gas Station is taxable as:</p>
+        <ul>
+            <li>he worked off reserve</li>
+            <li>his employer is located off reserve</li>
+        </ul>
+        <p>Chayton’s employment income from the Local Electricians is tax exempt as:</p>
+        <ul>
+            <li>he is registered under the <em>Indian Act</em></li>
+            <li>he lives on reserve</li>
+            <li>he works on reserve</li>
+            <li>his employer is also located on reserve</li>
+        </ul>
+    </div>
+</div>
+<div class="example-4 hidden">
+    <p>Chayton received a T4 slip, Statement of Remuneration Paid, from his employer located off reserve.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/chayton-01-en.png" alt="Text of Chayton's T4 slip is below" class="img-responsive" />
+    <details>
+        <summary>Details of Chayton’s T4 slip</summary>
+        <p class="mrgn-bttm-0">Employer’s name: The Gas Station</p>
+        <p>Employer’s address:</p>
+        <ul class="lst-none">
+            <li>
+                1 Town Road<br />
+                City, Quebec X0X 0X0
+            </li>
+        </ul>
+        <p>Employee’s name and address:</p>
+        <ul>
+            <li>Last name: Papatie</li>
+            <li>First name: Chayton</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street<br />
+                        First Nation Reserve, Quebec, X0X 0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 10: Province of employment - QC</li>
+            <li>Box 12: Social insurance number - 123 456 789</li>
+            <li>Box 14: Employment income - $7,000.00</li>
+            <li>Box 17: Employee’s QPP contributions - $350.00</li>
+            <li>Box 18: Employee’s EI premiums - $100.00</li>
+            <li>Box 22: Income tax deducted - $200.00</li>
+            <li>Box 24: EI Insurable earnings - $7,000.00</li>
+            <li>Box 26: CPP/QPP pensionable earnings - $7,000.00</li>
+            <li>Box 55: Employee’s PPIP premiums - $50.00</li>
+            <li>Box 56: PPIP insurable earnings - $7,000.00</li>
+        </ul>
+    </details>
+    <p>Chayton received a T4 slip, Statement of Remuneration Paid, from his employer located on reserve.</p>
+    <img src="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/chayton-02-en.png" alt="Text of Chayton's T4 slip is below" class="img-responsive" />
+    <details>
+        <summary>Details of Chayton’s T4 slip</summary>
+        <p class="mrgn-bttm-0">Employer’s name: Local Electricians</p>
+        <p>Employer’s address:</p>
+        <ul class="lst-none">
+            <li>
+                1 Main Street<br />
+                First Nation Reserve, Quebec X0X 0X0
+            </li>
+        </ul>
+        <p>Employee’s name and address:</p>
+        <ul>
+            <li>Last name: Papatie</li>
+            <li>First name: Chayton</li>
+            <li>
+                Address:
+                <ul class="lst-none">
+                    <li>
+                        123 Main Street <br />
+                        First Nation Reserve, Quebec X0X 0X0
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Income and other information:</p>
+        <ul>
+            <li>Box 10: Province of employment - QC</li>
+            <li>Box 12: Social insurance number - 123 456 789</li>
+            <li>Box 17: Employee’s QPP contributions - $450.00</li>
+            <li>Box 18: Employee’s EI premiums - $550.00</li>
+            <li>Box 24: EI Insurable earnings - $40,000.00</li>
+            <li>Box 26: CPP/QPP pensionable earnings - $40,000.00</li>
+            <li>Box 44: Union dues - $150.00</li>
+            <li>Box 55: Employee’s PPIP premiums - $200.00</li>
+            <li>Box 56: PPIP insurable earnings - $40,000.00</li>
+            <li>
+                Box 71: Other information (explained on reverse side of slip) - $40,000.00
+                <ul>
+                    <li>This box represents the <em>Indian Act</em> (exempt income) - Employment.</li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+    <hr class="brdr-bttm" />
+    <h2 id="calculation4" class="mrgn-tp-sm"><span id="calculation-init">Complete Chayton’s calculations</span><span id="calculation-alt" class="hidden">Complete Chayton’s calculations (with answers)</span></h2>
+    <p>Use the information to fill out the simplified tax return to find out if Chayton will get a refund or has a balance owing.</p>
+    <p>For this example, you will be able to validate your amounts, calculations and final answer at the end of the exercise.</p>
+    <p>Keep in mind that residents of Quebec are filling a provincial tax return. Therefore, you will not see any reference to provincial taxes or credits.</p>
+    <hr class="brdr-bttm" />
+</div>
+<div id="form-fill" class="hidden">
+    <p class="hidden-print" id="form-fill-clear">
+        <strong>Note:</strong> Before you proceed
+        <button onclick="$('[role=textbox]').empty(); document.getElementById('tax-bracket-select').reset();" class="btn btn-default btn-sm" data-wb-doaction='{"action": "removeClass", "source": "#tax-bracket&gt;colgroup&gt;col", "class": "bg-info"}'>reset the input fields</button>
+        if you have filled out a previous scenario.
+    </p>
+    <h3 id="step-1">Step 1: Identification</h3>
+    <p>Enter the individual's personal information.</p>
+    <p>Review the tax information and enter the information in the correct spaces.</p>
+    <div class="example-1 hidden">
+        <ul>
+            <li>Name: <strong>Jonah Smith</strong></li>
+            <li>SIN: <strong>123 456 789</strong></li>
+        </ul>
+    </div>
+    <div class="example-2 hidden">
+        <ul>
+            <li>Name: <strong>Terry Lee</strong></li>
+            <li>SIN: <strong>777 777 777</strong></li>
+        </ul>
+    </div>
+    <div class="example-3 hidden">
+        <ul>
+            <li>Name: <strong>Farah Awan</strong></li>
+            <li>SIN: <strong>000&nbsp;000&nbsp;000</strong></li>
+        </ul>
+    </div>
+    <div class="example-4 hidden">
+        <ul>
+            <li>Name: <strong>Chayton Papatie</strong></li>
+            <li>SIN: <strong>123&nbsp;456&nbsp;789</strong></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="name"><strong>Name</strong></p>
+        </div>
+        <div class="col-xs-6 col-md-5">
+            <div class="well well-sm p-0"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="sin"><strong>Social Insurance Number</strong></p>
+        </div>
+        <div class="col-xs-6 col-md-5">
+            <div class="well well-sm p-0"></div>
+        </div>
+    </div>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <h3 id="step-2">Step 2: Total income</h3>
+    <p>Calculate the individual's total income.</p>
+    <p>Review the tax information and complete the calculations.</p>
+    <div class="example-1 hidden">
+        <ul>
+            <li>
+                Jonah’s total income includes:
+                <ul>
+                    <li>the employment income of <strong>$18,000.00</strong> shown in box&nbsp;14 of his T4 slip</li>
+                </ul>
+            </li>
+            <li>He did not have any additional income.</li>
+        </ul>
+    </div>
+    <div class="example-2 hidden">
+        <ul>
+            <li>
+                Terry’s total income includes:
+                <ul>
+                    <li>employment income of <strong>$12,000.00</strong> shown in box 14 of her T4 slip</li>
+                    <li>cash tips received for an amount of <strong>$997.60</strong> not shown on an information slip</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="example-3 hidden">
+        <ul>
+            <li>
+                Farah’s total income includes:
+                <ul>
+                    <li>the employment income of <strong>$10,000.00 </strong>shown in box 14 of her T4 slip</li>
+                    <li>
+                        additional income:
+                        <ul>
+                            <li>income support from the ODSP of <strong>$14,000.00</strong> shown in box 11 of her T5007 slip</li>
+                            <li>payments of <strong>$5,700.00</strong> from her RESP shown in box 042 of her T4A slip</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>Note: </strong>Farah does not need to report her scholarship as income when she does her taxes because she is eligible for the DTC and is considered a full-time student for scholarship exemption purposes.</p>
+        <p>Farah may also receive additional grants from federal, provincial or territorial governments.</p>
+    </div>
+    <div class="example-4 hidden">
+        <ul>
+            <li>
+                Chayton’s total income includes:
+                <ul>
+                    <li>the employment income of <strong>$7,000.00</strong> shown in box 14 of his T4 slip from The Gas Station.</li>
+                    <li>the exempt income of <strong>$40,000.00</strong> shown in box 71 of his T4 slip from the Local Electricians is not entered here. As instructed on the back of the T4 slip, Chayton will complete the Form T90, Income Exempt from Tax under the <em>Indian Act</em> to report the exempt income.</li>
+                </ul>
+            </li>
+            <li>He did not have any additional income.</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-md" id="stp2-income">Enter <span class="h4">income</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp2-income-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp2-income2">Plus <span class="h4">additional income</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp2-income2-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp2-total">Equals the <span class="h4">total income</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp2-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <h3 id="step-3">Step 3: Net income</h3>
+    <p>Calculate the individual's net income.</p>
+    <p>Review the tax information and complete the calculations.</p>
+    <div class="example-1 hidden">
+        <ul>
+            <li>Jonah’s deductions for calculating net income are <strong>$950.00</strong>.</li>
+        </ul>
+        <details>
+            <summary>What his deductions include</summary>
+            <ul>
+                <li>registered pension plan (RPP) contributions shown in box 20 of his T4 slip</li>
+                <li>union dues shown in box 44 of his T4 slip</li>
+                <li>enhanced Canada Pension Plan (CPP) contributions, calculated using CPP contributions shown in box 16 of his T4 slip</li>
+            </ul>
+        </details>
+    </div>
+    <div class="example-2 hidden">
+        <ul>
+            <li>Terry’s deductions for calculating net income are <strong>$625.00</strong>.</li>
+        </ul>
+        <details>
+            <summary>What her deductions include</summary>
+            <ul>
+                <li>
+                    RRSP contributions shown on a receipt
+                    <ul>
+                        <li>an image of this receipt is not provided here</li>
+                    </ul>
+                </li>
+                <li>enhanced CPP contributions, calculated using CPP contributions shown in box 16 of her T4 slip</li>
+            </ul>
+        </details>
+    </div>
+    <div class="example-3 hidden">
+        <ul>
+            <li>Farah’s deductions for calculating net income are <strong>$65.00</strong></li>
+        </ul>
+        <details>
+            <summary>What her deductions include</summary>
+            <ul>
+                <li>enhanced CPP contributions, calculated using CPP contributions shown in box 16 of her T4 slip</li>
+            </ul>
+        </details>
+    </div>
+    <div class="example-4 hidden">
+        <ul>
+            <li>Chayton’s deductions for calculating net income are <strong>$150.00</strong>.</li>
+        </ul>
+        <details>
+            <summary>What his deductions include</summary>
+            <ul>
+                <li>union dues shown in box 44 of his Local Electricians T4 slip.</li>
+            </ul>
+        </details>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp3-total">
+                Enter the <span class="h4">total income</span><br />
+                from Step 2
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp3-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp3-deductions">
+                Minus the <span class="h4">total deductions</span>
+                <br />
+                for calculating net income
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp3-deductions-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp3-net">Equals the <span class="h4">net income</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp3-net-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <h3 id="step-4">Step 4: Taxable income</h3>
+    <p>Calculate the individual's taxable income.</p>
+    <p>Review the tax information and complete the calculations.</p>
+    <div class="example-1 hidden">
+        <ul>
+            <li>Jonah's deductions for calculating taxable income are <strong>$0.00.</strong></li>
+        </ul>
+    </div>
+    <div class="example-2 hidden">
+        <ul>
+            <li>Terry's deductions for calculating taxable income are <strong>$0.00.</strong></li>
+        </ul>
+    </div>
+    <div class="example-3 hidden">
+        <ul>
+            <li>Farah's deductions for calculating taxable income are <strong>$14,000.00</strong> from the ODSP as this income is not taxable.</li>
+        </ul>
+    </div>
+    <div class="example-4 hidden">
+        <ul>
+            <li>Chayton's deductions for calculating taxable income are <strong>$0.00.</strong></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp4-net">
+                Enter the <span class="h4">net income</span><br />
+                from Step 3
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp4-net-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp4-deductions">
+                Minus the <span class="h4">total deductions</span>
+                <br />
+                for calculating taxable income
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp4-deductions-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp4-taxable">Equals the <span class="h4">taxable income</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp4-taxable-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <h3 id="step-5">Step 5: Federal tax</h3>
+    <p>Calculate the federal tax.</p>
+    <h4>Part A: Calculate the federal tax using the correct tax bracket</h4>
+    <div class="example-1 hidden">
+        <p>To calculate Jonah's federal tax:</p>
+    </div>
+    <div class="example-2 hidden">
+        <p>To calculate Terry's federal tax:</p>
+    </div>
+    <div class="example-3 hidden">
+        <p>To calculate Farah's federal tax:</p>
+    </div>
+    <div class="example-4 hidden">
+        <p>To calculate Chayton's federal tax:</p>
+    </div>
+    <ol class="mrgn-bttm-lg">
+        <li>
+            Select the tax bracket
+            <div class="row">
+                <div class="col-md-6 frmvld hidden-print">
+                    <form id="tax-bracket-select">
+                        <div class="wb-fieldflow" data-wb-fieldflow='{"noForm": true, "noreqlabel": true, "defaultselectedlabel":"Select the taxable income", "reset": [{ "action": "addClass", "source":".col-b-1-cap, .col-b-2-cap, .col-b-3-cap, .col-b-4-cap", "class": "hidden" }, { "action": "removeClass", "source":"#cap-default-b", "class": "hidden" }, { "action": "removeClass", "source":".col-b-1, .col-b-2, .col-b-3, .col-b-4", "class": "invisible" }]}'>
+                            <p><strong>The tax bracket is</strong></p>
+                            <ul>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": ".col-b-1-cap", "class": "hidden", "live":true}, {"action": "addClass", "source": "#cap-default-b", "class": "hidden", "live":true}, {"action": "addClass", "source": ".col-b-2, .col-b-3, .col-b-4", "class": "invisible", "live":true}]'>$49,999 or less</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": ".col-b-2-cap", "class": "hidden", "live":true}, {"action": "addClass", "source": "#cap-default-b", "class": "hidden", "live":true}, {"action": "addClass", "source": ".col-b-1, .col-b-3, .col-b-4", "class": "invisible", "live":true}]'>$50,000 to $99,999</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": ".col-b-3-cap", "class": "hidden", "live":true}, {"action": "addClass", "source": "#cap-default-b", "class": "hidden", "live":true}, {"action": "addClass", "source": ".col-b-1, .col-b-2, .col-b-4", "class": "invisible", "live":true}]'>$100,000 to $149,999</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": ".col-b-4-cap", "class": "hidden", "live":true}, {"action": "addClass", "source": "#cap-default-b", "class": "hidden", "live":true}, {"action": "addClass", "source": ".col-b-1, .col-b-2, .col-b-3", "class": "invisible", "live":true}]'>$150,000 or more</li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>Enter the taxable income from Step 4 in the column for the appropriate tax bracket</li>
+        <li>Use the table below to complete the calculation in that column</li>
+    </ol>
+    <div class="row">
+        <div class="table-responsive" id="tbl-resize">
+            <table class="table table-bordered small mrgn-bttm-0 col-xs-12" id="tax-bracket" role="grid">
+                <caption>
+                    Tax brackets<br /><span id="cap-default-b">(fill in only one tax bracket)</span
+                    ><span class="col-b-1-cap hidden">(fill in tax bracket 1)</span
+                    ><span class="col-b-2-cap hidden">(fill in tax bracket 2)</span
+                    ><span class="col-b-3-cap hidden">(fill in tax bracket 3)</span
+                    ><span class="col-b-4-cap hidden">(fill in tax bracket 4)</span>
+                </caption>
+                <thead>
+                    <tr class="h3">
+                        <td class="bg-dark col-md-4">&nbsp;</td>
+                        <th scope="col" class="bg-dark text-white text-center col-md-2 col-b-1">
+                            Tax bracket <br />
+                            1
+                        </th>
+                        <th scope="col" class="bg-dark text-white text-center col-md-2 col-b-2">
+                            Tax bracket <br />
+                            2
+                        </th>
+                        <th scope="col" class="bg-dark text-white text-center col-md-2 col-b-3">
+                            Tax bracket <br />
+                            3
+                        </th>
+                        <th scope="col" class="bg-dark text-white text-center col-md-2 col-b-4">
+                            Tax bracket <br />
+                            4
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><strong>Taxable income</strong></th>
+                        <td class="col-b-1">$49,999 or less</td>
+                        <td class="col-b-2">$50,000 to $99,999</td>
+                        <td class="col-b-3">$100,000 to $149,999</td>
+                        <td class="col-b-4">$150,000 or more</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Enter the</span> <strong>taxable income</strong> <span class="h6">from Step 4</span></th>
+                        <td class="col-b-1">
+                            <div class="well well-sm mrgn-bttm-0 text-right p-0"></div>
+                        </td>
+                        <td class="col-b-2">
+                            <div class="well well-sm mrgn-bttm-0 text-right p-0"></div>
+                        </td>
+                        <td class="col-b-3">
+                            <div class="well well-sm mrgn-bttm-0 text-right p-0"></div>
+                        </td>
+                        <td class="col-b-4">
+                            <div class="well well-sm mrgn-bttm-0 text-right p-0"></div>
+                        </td>
+                    </tr>
+                    <!--For Jonah //-->
+                    <tr class="tax-brackets-1 hidden">
+                        <th scope="row"><span class="h6">Enter the </span><strong>taxable income</strong> <span class="h6">from Step 4</span> (Answer)</th>
+                        <td class="text-right nowrap col-b-1" id="stp5-taxable-bracket-1">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Terry //-->
+                    <tr class="tax-brackets-2 hidden">
+                        <th scope="row"><span class="h6">Enter the </span><strong>taxable income</strong> <span class="h6">from Step 4</span> (Answer)</th>
+                        <td class="text-right nowrap col-b-1" id="stp5-taxable-bracket-2">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Farah //-->
+                    <tr class="tax-brackets-3 hidden">
+                        <th scope="row"><span class="h6">Enter the </span><strong>taxable income</strong> <span class="h6">from Step 4</span></th>
+                        <td class="text-right nowrap col-b-1" id="stp5-taxable-bracket-3">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Chayton //-->
+                    <tr class="tax-brackets-4 hidden">
+                        <th scope="row"><span class="h6">Enter the </span><strong>taxable income</strong> <span class="h6">from Step 4</span> (Answer)</th>
+                        <td class="text-right nowrap col-b-1" id="stp5-taxable-bracket-4">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Subtract </span><strong>this amount from taxable income</strong></th>
+                        <td class="text-right nowrap col-b-1">
+                            <span class="fas fa-minus fa-xs"><span class="wb-inv">minus </span></span> <strong>0.00</strong>
+                        </td>
+                        <td class="text-right nowrap col-b-2">
+                            <span class="fas fa-minus fa-xs"><span class="wb-inv">minus </span></span> <strong>49,999.00</strong>
+                        </td>
+                        <td class="text-right nowrap col-b-3">
+                            <span class="fas fa-minus fa-xs"><span class="wb-inv">minus </span></span> <strong>99,999.00</strong>
+                        </td>
+                        <td class="text-right nowrap col-b-4">
+                            <span class="fas fa-minus fa-xs"><span class="wb-inv">minus </span></span> <strong>149,999.00</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Equals </span><strong>taxable income subject to federal tax rate</strong></th>
+                        <td class="col-b-1">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-2">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-3">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-4">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                    </tr>
+                    <!--For Jonah //-->
+                    <tr class="tax-brackets-1 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>taxable income subject to federal tax rate</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-baseline-bracket-1">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Terry //-->
+                    <tr class="tax-brackets-2 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>taxable income subject to federal tax rate</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-baseline-bracket-2">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Farah //-->
+                    <tr class="tax-brackets-3 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>taxable income subject to federal tax rate</strong>(Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-baseline-bracket-3">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Chayton //-->
+                    <tr class="tax-brackets-4 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>taxable income subject to federal tax rate</strong>(Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-baseline-bracket-4">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Multiply by the </span><strong>federal tax rate</strong></th>
+                        <td class="text-right col-b-1">
+                            <span class="fas fa-times fa-xs mrgn-tp-sm"><span class="wb-inv">multiplied by </span></span> <strong>10%</strong><br /><small>(Multiply by 0.10)</small>
+                        </td>
+                        <td class="text-right col-b-2">
+                            <span class="fas fa-times fa-xs mrgn-tp-sm"><span class="wb-inv">multiplied by </span></span> <strong>20%</strong><br /><small>(Multiply by 0.20)</small>
+                        </td>
+                        <td class="text-right col-b-3">
+                            <span class="fas fa-times fa-xs mrgn-tp-sm"><span class="wb-inv">multiplied by </span></span> <strong>30%</strong><br /><small>(Multiply by 0.30)</small>
+                        </td>
+                        <td class="text-right col-b-4">
+                            <span class="fas fa-times fa-xs mrgn-tp-sm"><span class="wb-inv">multiplied by </span></span> <strong>40%</strong><br /><small>(Multiply by 0.40)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Equals </span><strong>tax</strong> <span class="h6">after multiplying by the federal tax rate</span></th>
+                        <td class="col-b-1">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-2">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-3">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-4">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                    </tr>
+                    <!--For Jonah //-->
+                    <tr class="tax-brackets-1 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>tax</strong> <span class="h6">after multiplying by the federal tax</span> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-aftertax-bracket-1">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Terry //-->
+                    <tr class="tax-brackets-2 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>tax</strong> <span class="h6">after multiplying by the federal tax</span> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-aftertax-bracket-2">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Farah //-->
+                    <tr class="tax-brackets-3 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>tax</strong> <span class="h6">after multiplying by the federal tax rate</span> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-aftertax-bracket-3">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Chayton //-->
+                    <tr class="tax-brackets-4 hidden">
+                        <th scope="row"><span class="h6">Equals </span><strong>tax</strong> <span class="h6">after multiplying by the federal tax rate</span> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-aftertax-bracket-4">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Add </span><strong>federal tax calculated on income</strong> <span class="h6">in the lower tax brackets</span></th>
+                        <td class="text-right col-b-1">
+                            <span class="fas fa-plus fa-xs mrgn-tp-sm"><span class="wb-inv">plus </span></span> <strong>0.00</strong>
+                        </td>
+                        <td class="text-right col-b-2">
+                            <span class="fas fa-plus fa-xs mrgn-tp-sm"><span class="wb-inv">plus </span></span> <strong>4,999.90</strong>
+                        </td>
+                        <td class="text-right col-b-3">
+                            <span class="fas fa-plus fa-xs mrgn-tp-sm"><span class="wb-inv">plus </span></span> <strong>14,999.70</strong>
+                        </td>
+                        <td class="text-right col-b-4">
+                            <span class="fas fa-plus fa-xs mrgn-tp-sm"><span class="wb-inv">plus </span></span> <strong>29,999.40</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="h6">Equals</span> <strong>federal tax on taxable income</strong></th>
+                        <td class="col-b-1">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-2">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-3">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                        <td class="col-b-4">
+                            <span class="fas fa-equals fa-xs pull-left mrgn-tp-md"><span class="wb-inv">equals</span></span>
+                            <div class="well well-sm mrgn-bttm-0 mrgn-lft-md text-right p-0"></div>
+                        </td>
+                    </tr>
+                    <!--For Jonah //-->
+                    <tr class="tax-brackets-1 hidden">
+                        <th scope="row"><span class="h6">Equals</span> <strong>federal tax on taxable income</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-fedtax-bracket-1">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Terry //-->
+                    <tr class="tax-brackets-2 hidden">
+                        <th scope="row"><span class="h6">Equals</span> <strong>federal tax on taxable income</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-fedtax-bracket-2">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Farah //-->
+                    <tr class="tax-brackets-3 hidden">
+                        <th scope="row"><span class="h6">Equals</span> <strong>federal tax on taxable income</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-fedtax-bracket-3">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                    <!--For Chayton //-->
+                    <tr class="tax-brackets-4 hidden">
+                        <th scope="row"><span class="h6">Equals</span> <strong>federal tax on taxable income</strong> (Answer)</th>
+                        <td class="text-right col-b-1" id="stp5-fedtax-bracket-4">&nbsp;</td>
+                        <td class="col-b-2">&nbsp;</td>
+                        <td class="col-b-3">&nbsp;</td>
+                        <td class="col-b-4">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-12">
+            <p class="mrgn-bttm-lg"><strong>Reminder:</strong> This exercise is using simplified tax rates. They are different than the tax rates used on the actual tax return.</p>
+        </div>
+        <h4>Part B: Calculate the federal tax using non-refundable tax credits</h4>
+        <p>Review the tax information and complete the calculations.</p>
+        <div class="mrgn-bttm-md example-1 hidden">
+            <ul>
+                <li>Jonah’s federal non-refundable tax credits are <strong>$16,500.00</strong>.</li>
+            </ul>
+            <details>
+                <summary>What his non-refundable tax credits include</summary>
+                <ul>
+                    <li>the basic personal amount</li>
+                    <li>CPP contributions calculated using amounts shown in box 16 of his T4 slip</li>
+                    <li>employment insurance (EI) premiums shown in box 18 of his T4 slip</li>
+                    <li>the Canada employment amount</li>
+                    <li>
+                        tuition amounts calculated using amounts shown on a T2202, Tuition and Enrolment Certificate
+                        <ul>
+                            <li>an image of this form is not provided here</li>
+                        </ul>
+                    </li>
+                    <li>Jonah’s eligible medical expenses, including premiums for private health services plan shown in box 85 of his T4 slip</li>
+                </ul>
+            </details>
+        </div>
+        <div class="mrgn-bttm-md example-2 hidden">
+            <ul>
+                <li>Terry’s federal non-refundable tax credits are <strong>$15,000.00</strong>.</li>
+            </ul>
+            <details>
+                <summary>What her non-refundable tax credits include</summary>
+                <ul>
+                    <li>the basic personal amount</li>
+                    <li>CPP contributions calculated using amounts shown in box 16 of her T4 slip</li>
+                    <li>employment insurance (EI) premiums shown in box 18 of her T4 slip</li>
+                    <li>the Canada employment amount</li>
+                </ul>
+            </details>
+        </div>
+        <div class="mrgn-bttm-md example-3 hidden">
+            <ul>
+                <li>Farah’s federal non-refundable tax credits are <strong>$26,265.00</strong>.</li>
+            </ul>
+            <details>
+                <summary>What her non-refundable tax credits include</summary>
+                <ul>
+                    <li>the basic personal amount</li>
+                    <li>CPP contributions calculated using amounts shown in box 16 of her T4 slip</li>
+                    <li>employment insurance (EI) premiums shown in box 18 of her T4 slip</li>
+                    <li>the Canada employment amount</li>
+                    <li>disability amount (for self)</li>
+                </ul>
+            </details>
+        </div>
+        <div class="mrgn-bttm-md example-4 hidden">
+            <ul>
+                <li>Chayton’s federal non-refundable tax credits are <strong>$17,520.00</strong>.</li>
+            </ul>
+            <details>
+                <summary>What his non-refundable tax credits include</summary>
+                <ul>
+                    <li>the basic personal amount</li>
+                    <li>QPP contributions calculated using amounts shown in box 17 of his T4 slips</li>
+                    <li>employment insurance (EI) premiums shown in box 18 of his T4 slips</li>
+                    <li>PPIP amount calculated using amounts shown in box 55 of his T4 slips (Only when a <strong>resident of Quebec</strong> at the end of the tax year, who worked in Quebec during the year)</li>
+                    <li>the Canada employment amount</li>
+                </ul>
+            </details>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp5-crd">Enter the <span class="h4">federal non-refundable tax credits</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp5-crd-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="fed-tx-rt">
+                Multiply by the <span class="h4">federal <span class="nowrap">non-refundable</span> tax credit rate</span><br /><span class="small">Multiply by 0.10</span>
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="mrgn-lft-xl">
+                <p class="text-right h3 mrgn-tp-md">10%</p>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp5-total-crd">
+                Equals the <span class="h4">total federal <span class="nowrap">non-refundable</span> tax credits amount</span>
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp5-total-crd-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp5-fed-tax">
+                Enter the <span class="h4">federal tax on taxable income</span><br />
+                from the table above
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp5-fed-tax-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp5-total-crd2">
+                Minus the <span class="h4">total federal <span class="nowrap">non-refundable</span> tax credits amount</span>
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp5-total-crd2-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp5-fed-tax-total">
+                Equals the <span class="h4">federal tax</span><br />
+                If negative, enter "0"<br />
+                (Remember, <span class="nowrap">non-refundable</span> tax credits can only reduce tax to zero.)
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp5-fed-tax-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="mrgn-bttm-md example-3 hidden">
+            <p><strong>Note 1:</strong> Farah chose to transfer her tuition credits to her parents. Any remaining unused tuition credits will be carried forward to reduce the taxes she owes in a future year.</p>
+            <p><strong>Note 2:</strong> Farah also chose to transfer her unused DTC to one of her parents.</p>
+        </div>
+    </div>
+    <details>
+        <summary>Provincial or territorial tax</summary>
+        <p>You will do a similar calculation to figure out the provincial or territorial taxes you might owe. You will report this amount in Step 6.</p>
+        <p><strong>Note:</strong> If you lived in Quebec on December 31 of the tax year, you will calculate your provincial taxes by completing a separate provincial tax return for Revenu Québec.</p>
+    </details>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <h3 id="step-6">Step 6: Refund or balance owing</h3>
+    <p>Calculate to see if the final result is a refund or a balance owing.</p>
+    <p>Review the tax information and complete the calculations.</p>
+    <div class="example-1 hidden">
+        <ul>
+            <li>
+                Jonah's provincial tax is <strong>$16.00</strong>
+                <ul>
+                    <li>
+                        When you do your taxes, a similar calculation is done for provincial or territorial taxes as for federal tax (Step 5).
+                        <ul>
+                            <li>For this exercise, the completed calculation is provided.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Jonah’s total income tax deducted at source is <strong>$2,209.80</strong>, as shown in box 22 of his T4 slip</li>
+            <li>Jonah’s refundable tax credits are <strong>$0.00</strong></li>
+        </ul>
+    </div>
+    <div class="example-2 hidden">
+        <ul>
+            <li>
+                Terry’s provincial or territorial tax is <strong>$0.00</strong>
+                <ul>
+                    <li>
+                        When you do your taxes, a similar calculation is done for provincial or territorial taxes as for federal tax (Step 5).
+                        <ul>
+                            <li>For this exercise, the completed calculation is provided.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Terry’s total income tax deducted at source is <strong>$200.00</strong>, as shown on her T4 slip</li>
+            <li>Terry’s refundable tax credits are <strong>$25.00</strong>.</li>
+        </ul>
+        <details>
+            <summary>What her refundable tax credits include</summary>
+            <ul>
+                <li>CPP overpayments, calculated using amounts shown in box 16 of her T4 slip</li>
+                <li>EI overpayments, calculated using amounts shown in box 18 of her T4 slip</li>
+            </ul>
+        </details>
+    </div>
+    <div class="example-3 hidden">
+        <ul>
+            <li>
+                Farah’s provincial or territorial tax is <strong>$0.00</strong>
+                <ul>
+                    <li>
+                        When you do your taxes, a similar calculation is done for provincial or territorial taxes as for federal tax (Step 5).
+                        <ul>
+                            <li>For this exercise, the completed calculation is provided.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Farah’s total income tax deducted at source is <strong>$0.00</strong>, as shown in box 22 of her T4 slip</li>
+            <li>Farah’s refundable tax credits are <strong>$1,600.00</strong>.</li>
+        </ul>
+        <details>
+            <summary>What her refundable tax credits include</summary>
+            <ul>
+                <li>Farah’s Canada workers benefit (CWB) including the CWB disability supplement.</li>
+            </ul>
+        </details>
+    </div>
+    <div class="example-4 hidden">
+        <ul>
+            <li>
+                Chayton’s provincial or territorial tax is <strong>$0.00</strong>
+                <ul>
+                    <li>
+                        Chayton’s provincial tax is calculated on a separate provincial tax return for Revenu Quebec
+                        <ul>
+                            <li>For this exercise, the completed calculation is provided.</li>
+                        </ul>
+                    </li>
+                    <li>This exercise includes both the federal and provincial tax calculations.</li>
+                    <li>Chayton’s actual federal tax return will not have a provincial or territorial tax.</li>
+                </ul>
+            </li>
+            <li>Chayton’s total income tax deducted at source is <strong>$200.00</strong>, as shown in box 22 of his T4 slip</li>
+            <li>Chayton’s refundable tax credits are <storng>$0.00</storng></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-md" id="stp7-fed-tax">
+                Enter the <span class="h4">federal tax</span><br />
+                from Step 5
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-fed-tax-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp7-prov-tax">
+                Plus the
+                <span class="h4"
+                    >provincial <br class="visible-xs" />
+                    or territorial tax</span
+                >
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-prov-tax-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp7-pay-total">Equals the <span class="h4">total payable</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp7-pay-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-lg">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-md" id="stp7-tax-deduct">Enter the <span class="h4">tax deducted</span> at source</p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-tax-deduct-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp7-tax-crd">Plus the <span class="h4">eligible refundable tax credits</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-tax-crd-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp7-crd-total">Equals the <span class="h4">total credits</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp7-crd-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-lg">
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-md" id="stp7-pay-total2">Enter the <span class="h4">total payable</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-pay-total2-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right mrgn-tp-sm" id="stp7-crd-total2">Minus the <span class="h4">total credits</span></p>
+        </div>
+        <div class="col-xs-6 col-md-3" id="stp7-crd-total2-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg mrgn-bttm-md"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <p class="text-right" id="stp7-final-total">
+                Equals the <span class="h4">final result</span><br />
+                A positive result represents a balance owing, and a negative result represents a refund.
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 brdr-tp" id="stp7-final-total-edit">
+            <div class="well well-sm p-0 mrgn-lft-lg"></div>
+        </div>
+    </div>
+    <p>Compare your answers to the answers provided at the end of the exercise.</p>
+    <div id="self-answer">
+        <h2>Answer</h2>
+        <!--Jonah answer//-->
+        <div class="wb-frmvld example-1 hidden">
+            <form>
+                <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "radio", "noForm": true, "gcChckbxrdio":true, "noreqlabel": true}'>
+                    <p><span class="h3">After the calculation, Jonah will:</span></p>
+                    <ul>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-1-a-1", "live": true }'>receive a refund</li>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-1-a-2", "live": true}'>have a balance owing</li>
+                    </ul>
+                </div>
+            </form>
+            <div aria-live="polite">
+                <div id="ex-1-a-1" class="hidden">
+                    <p><span class="pull-left">Jonah will receive a refund of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/jonah-answers-en.txt .answers-show-1">
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ex-1-a-2" class="hidden">
+                    <p><span class="pull-left">Jonah will have a balance owing of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/jonah-answers-en.txt .answers-show-1">
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Terry answer//-->
+        <div class="wb-frmvld example-2 hidden">
+            <form>
+                <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "radio", "noForm": true, "gcChckbxrdio":true, "noreqlabel": true}'>
+                    <p><span class="h3">After the calculation, Terry will:</span></p>
+                    <ul>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-2-a-1", "live": true }'>receive a refund</li>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-2-a-2", "live": true}'>have a balance owing</li>
+                    </ul>
+                </div>
+            </form>
+            <div aria-live="polite">
+                <div id="ex-2-a-1" class="hidden">
+                    <p><span class="pull-left">Terry will receive a refund of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/terry-answers-en.txt .answers-show-2">
+                            <!--li><a href="#answer" data-wb-doaction='{"action": "removeClass", "source": ".example-2.correct-answer", "class": "hidden"}'>Show answer</a> for Terry, or</li-->
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ex-2-a-2" class="hidden">
+                    <p><span class="pull-left">Terry will have a balance owing of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/terry-answers-en.txt .answers-show-2">
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Farah answer//-->
+        <div class="wb-frmvld example-3 hidden">
+            <form>
+                <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "radio", "noForm": true, "gcChckbxrdio":true, "noreqlabel": true}'>
+                    <p><span class="h3">After the calculation, Farah will:</span></p>
+                    <ul>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-3-a-1", "live": true }'>receive a refund</li>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-3-a-2", "live": true}'>have a balance owing</li>
+                    </ul>
+                </div>
+            </form>
+            <div aria-live="polite">
+                <div id="ex-3-a-1" class="hidden">
+                    <p><span class="pull-left">Farah will receive a refund of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-answers-en.txt .answers-show-3">
+                            <!--li><a href="#answer" data-wb-doaction='{"action": "removeClass", "source": ".example-2.correct-answer", "class": "hidden"}'>Show answer</a> for Farah, or</li-->
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ex-3-a-2" class="hidden">
+                    <p><span class="pull-left">Farah will have a balance owing of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/farah-answers-en.txt .answers-show-3">
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Chayton answer//-->
+        <div class="wb-frmvld example-4 hidden">
+            <form>
+                <div class="wb-fieldflow" data-wb-fieldflow='{"renderas": "radio", "noForm": true, "gcChckbxrdio":true, "noreqlabel": true}'>
+                    <p><span class="h3">After the calculation, Chayton will:</span></p>
+                    <ul>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-4-a-1", "live": true }'>receive a refund</li>
+                        <li data-wb-fieldflow='{"action": "toggle", "toggle": "#ex-4-a-2", "live": true}'>have a balance owing</li>
+                    </ul>
+                </div>
+            </form>
+            <div aria-live="polite">
+                <div id="ex-4-a-1" class="hidden">
+                    <p><span class="pull-left">Chayton will receive a refund of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/chayton-answers-en.txt .answers-show-4">
+                            <!--li><a href="#answer" data-wb-doaction='{"action": "removeClass", "source": ".example-4.correct-answer", "class": "hidden"}'>Show answer</a> for chayton, or</li-->
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ex-4-a-2" class="hidden">
+                    <p><span class="pull-left">Chayton will have a balance owing of</span>.</p>
+                    <div class="otherawnser">
+                        <p>If you have provided an answer, you can:</p>
+                        <ul data-ajax-prepend="https://www.canada.ca/content/dam/cra-arc/serv-info/tax/individuals/edu-prgms/mdls-xrcss/chayton-answers-en.txt .answers-show-4">
+                            <li><a href="#examples">Select another example</a> if you would like to try again</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div aria-live="assertive" id="answer">
+            <p class="example-1 correct-answer hidden"><strong>Answer:</strong> Jonah will <strong>receive a refund</strong> of <strong>$2,138.80</strong>.</p>
+            <p class="example-2 correct-answer hidden"><strong>Answer:</strong> Terry will <strong>receive a refund</strong> of <strong>$225.00</strong>.</p>
+            <p class="example-3 correct-answer hidden"><strong>Answer:</strong> Farah will <strong>receive a refund</strong> of <strong>$1,600.00</strong>.</p>
+            <p class="example-4 correct-answer hidden"><strong>Answer:</strong> Chayton will <strong>receive a refund</strong> of <strong>$200.00</strong>.</p>
+        </div>
+    </div>
+</div>
+<!--only for print purposes //-->
+<p class="visible-print"><span class="pull-left">of</span>.</p>
